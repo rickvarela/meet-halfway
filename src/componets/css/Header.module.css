@@ -1,0 +1,39 @@
+.siteLogo {
+    font-size: 3rem;
+    height: 25px;
+}
+
+.siteHeader {
+    padding: 0 10px;
+    background-color: #4EA8DE;
+    color: white;
+    box-shadow: 0 3px 5px rgba(57, 63, 72, 0.3);
+    z-index: 200;
+    font-size: 0.75rem;
+    flex-grow: 0;
+}
+
+.siteHeaderWrapper {
+    padding: 10px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media screen and (min-width: 1200px), screen and (min-width: 1200px) and (-webkit-device-pixel-ratio: 2) {
+
+    .siteHeader {
+        font-size: 1rem;
+    }
+
+    .siteHeaderWrapper {
+        width: 1100px;
+        margin: 0 auto;
+    }
+
+    .siteLogo {
+        font-size: 3rem;
+        height: 45px;
+    }
+}

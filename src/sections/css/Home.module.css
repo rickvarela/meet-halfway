@@ -1,0 +1,164 @@
+.Home {
+    background-color: #EEF4FB;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.HomeWrapper {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+    /*padding: 10px;*/
+}
+
+.siteAbout {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding: 15px;
+    align-items: center;
+    flex-grow: 1;
+    
+     
+}
+
+.siteAbout > img {
+    height: 125px;
+    flex-grow: 1;
+}
+
+.siteMenu {
+    color: white;
+    background-color: #16CAAF;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.menuItem {
+    margin-top: 10px;
+    font-size: 1.25rem;
+    border-radius: 10px;
+    border: none;
+}
+
+input.menuItem {
+    padding: 2px 8px 2px 8px;
+}
+
+input.menuItem:focus {
+    outline: none;
+}
+
+label.menuItem {
+    display: flex;
+    align-items: center;
+}
+
+.submitButton {
+    margin-top: 20px;
+    background-color: #FE9148;
+    font-weight: bold;
+    font-family: inherit;
+    font-size: 1.25rem;
+    border-radius: 10px;
+    border: none;
+}
+
+.personIcon {
+    height: 25px;
+    margin-left: 5px;
+}
+
+.midpointIcon {
+    height: 35px;
+    margin-left: 5px;
+}
+
+@media screen and (orientation: landscape) {
+    .HomeWrapper {
+        flex-direction: row;
+    }
+}
+  
+@media screen and (orientation: landscape) and (min-width: 700px), screen and (min-width: 700px) {
+    .HomeWrapper {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .siteMenu {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        border-radius: 10px;
+    }
+
+    .siteAbout {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        border-radius: 10px 0 0 10px;
+    }
+
+    .siteAbout {
+        width: 300px;
+        flex-direction: row;
+        flex-grow: unset;
+    }
+}
+
+@media screen and (min-width: 1200px), screen and (min-width: 1200px) and (-webkit-device-pixel-ratio: 2){
+
+    .siteAbout {
+        width: auto;
+        padding: 40px;
+    }
+
+    .siteAbout > img {
+        height: 200px;
+        flex-grow: 1;
+        margin-right: 40px;
+    }
+
+    .aboutText {
+        word-wrap: break-word;
+        width: 300px;
+        font-size: 1.25rem;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+    
+    .siteMenu {
+        padding: 40px;
+    }
+
+    .menuItem {
+        margin-top: 10px;
+        font-size: 1.75rem;
+    }
+
+    input.menuItem {
+        padding: 5px 10px 5px 10px;
+    }
+
+    
+
+    .submitButton {
+        margin-top: 40px;
+        font-size: 1.75rem;
+    }
+
+    .personIcon {
+        height: 30px;
+        margin-left: 10px;
+    }
+
+    .midpointIcon {
+        height: 45px;
+        margin-left: 10px;
+    }
+}
+

@@ -1,0 +1,78 @@
+.Results {
+    display: flex;
+    flex-direction: column;
+}
+
+.map {
+    height: 80vh;
+}
+
+.mapWrapper {
+    flex-grow: 1;
+}
+
+.placeRow {
+    display: flex;
+    flex-direction: row;
+    border-top: 4px solid #4EA8DE;
+}
+
+.placePhoto {
+    object-fit: cover;
+    width: 80px;
+}
+
+.placeList {
+    margin: 0 auto;
+    flex-grow: 0;
+}
+
+.placeText {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 5px;
+    height: fit-content;
+}
+
+.placeIndex {
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    background-color: #16CAAF;
+    color: white;
+}
+
+.placeButton {
+    width: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #16CAAF;
+    border: none;
+    font-family: inherit;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+@media screen and (min-width: 1200px), screen and (min-width: 1200px) and (-webkit-device-pixel-ratio: 2) {
+    .placeIndex {
+        width: 100px;
+        height: 100px;
+    }
+
+    .placePhoto {
+        width: 100px;
+        height: 100px;
+    }
+
+    .placeButton {
+        width: 100px;
+        height: 100px;
+    }
+}
